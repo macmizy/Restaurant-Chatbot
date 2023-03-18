@@ -20,6 +20,9 @@ body{
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 15px 0 black;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -130,6 +133,28 @@ form{
     color: #999;
     margin-top: 2px;
     text-align: right;
+  }
+
+
+  @media(max-width: 640px ){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-header{
+        height: 10vh;
+    }
+
+    .chat-body{
+        height: 90vh;
+    }
+
+    form{
+        height: 10vh;
+    }
   }
 
 
