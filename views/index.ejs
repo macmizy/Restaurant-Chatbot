@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bot</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="icon" type="image/x-icon" sizes="114x114" href="static/images/logo.jpg">  
+    <script src="https://kit.fontawesome.com/20a3019659.js" crossorigin="anonymous"></script>
+    <script  defer src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script defer src="static/script.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="chat-header">
+            <img src="static/images/logo.jpg" alt="logo">
+            <h2>Don Restuarant</h2>
+        </div>
+        <div class="chat-body"></div>
+        <form>
+            <input class="input-field" name="msg" placeholder="Type here" autofocus type="text">
+            <button class="send-button" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
     
 </body>
 </html>
