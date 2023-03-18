@@ -162,10 +162,7 @@ const getMenuString = () => {
   
 
 io.on("connection", socket => {
-  socket.id = socket.request.session.id
-  
-    
-    
+   
     //bot message function
     const sendBotMessage = (message) => {
         // console.log('Bot message received:', message);
