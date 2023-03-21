@@ -97,7 +97,7 @@ form{
     transform: rotate(30deg);
 }
 
-.user-message{
+.user-message, .bot-message{
     padding: 8px;
     background-color: #ccc;
     margin: 5px;
@@ -113,19 +113,11 @@ form{
 }
 
 .bot-message{
-    padding: 8px;
     background-color: #137ad4;
-    margin: 5px;
     width:auto;
     border-radius: 3px 10px 10px 10px;
     align-self: flex-start; 
     color: #ffffff;
-    white-space: pre-wrap;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: 100;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .timestamp {
@@ -142,6 +134,7 @@ form{
         height: 100vh;
         display: flex;
         flex-direction: column;
+        box-shadow: none;
     }
 
     .chat-header{
@@ -149,7 +142,7 @@ form{
     }
 
     .chat-body{
-        height: 90vh;
+        height: 80vh;
     }
 
     form{
